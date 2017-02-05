@@ -34,7 +34,7 @@ export default class AnimatedCircularProgress extends React.Component {
       }
     ).start();
   }
-  
+
   performLinearAnimation(toValue, duration) {
     Animated.timing(this.state.chartFillAnimation, {
       toValue: toValue,
@@ -62,6 +62,8 @@ AnimatedCircularProgress.propTypes = {
   width: PropTypes.number.isRequired,
   tintColor: PropTypes.string,
   backgroundColor: PropTypes.string,
+  opponentTintColor: PropTypes.string,
+  opponentFill: PropTypes.number,
   tension: PropTypes.number,
   friction: PropTypes.number
 }
